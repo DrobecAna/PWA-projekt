@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 44pt;
+    margin: 0px;
+    font-family: 'Libre Baskerville', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav{
+    max-width: 30%;
+    margin: 5px auto 20px auto;
+
+}
+
+@media only screen and (max-width:1000px){
+    nav{
+        max-width: 40%;
+    }
+} 
+
+@media only screen and (max-width:800px){
+    nav{
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    nav{
+        max-width: 90%;
+        
+    }
+}
+
+ul{    
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+ul li a{
+    text-transform: uppercase;
+    font-family: "Anton", non-serif;
+    font-weight: 200;
+    font-size: 9pt;
+    letter-spacing: 1px;
+    margin: 0 5px;
+    
+    
+}
+
+ul li a:hover{
+    color: #838383;
+}
+
+main{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h3{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    text-align:center;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.clanci{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 50px 0;
+    padding:0;
+}
+
+article{
+    max-width: 30%;
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    min-height: 250px;
+    height: fit-content;
+
+}
+
+@media only screen and (max-width: 900px){
+    main{
+        max-width: 90%;
+    }
+   
+    .clanci{
+        display:block;
+    }
+   article{
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+    min-height: 100px;
+    height: fit-content;
+   }
+   
+}
+
+@media only screen and (max-width:500px){
+    ul{
+        display: block;
+    }
+
+    li{
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    header{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+article figure{
+    margin:0;
+    padding:0;
+}
+
+.imgop{
+    width: 100%;
+    max-width: 330px;
+}
+
+.whitebg{
+    background-color:#ffffff;
+    margin: 0;
+}
+
+.opcont{
+    background-color: #ffffff;
+    width: 100%;
+    max-width:90%;
+    margin: -30px auto 0 auto;
+    padding: 10px 0;
+    position: relative;
+    
+}
+
+@media only screen and (max-width:900px){
+    .imgop{
+        max-width: 800px;
+       }
+    
+       .opcont{
+        max-width: 90%;
+       }
+}
+
+.opcont h4{
+    margin: 0 20px;
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'Libre Baskerville', Times, serif;
+}
+
+h4 a:hover{
+    color: #838383;
+}
+
+.opcont p{
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 12pt;
+    color: #afaeaf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+
+footer{
+    margin: 160px 0 0 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    padding: 10px 0 10px 0;
+    background-color: #f1f1f1;
+    color: #afaeaf;
+}
+
+
+
+/*---------clanak-----------------*/
+
+.kategorija-path{
+    color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Libre Baskerville', Times, serif;
+}
+
+
+
+figure{
+    margin:0;
+    padding:0;
+}
+
+.clanakimg{
+    width: 100%;
+    max-width: 80%;
+}
+
+.opis{
+    margin: 30px 0;
+    font-size: 14pt;
+}
+
+.objavljeno{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.clanaktext{
+    margin: 40px 0;
+}
+
+
+/*--------unos------------*/
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputnasl{
+    display: block;
+    width: 400px;
+}
+
+.textpolje{
+    display: block;
+}
+
+form input, textarea, select{
+    margin-bottom: 30px;
+    width: 400px;
+    
+}
+
+@media only screen and (max-width: 800px){
+    form input, textarea, select{
+        width: 100%;
+    }
+
+    .inputnasl{
+        width: 100%;
+    }
+}
+
+form label{
+    display: block;
+    margin: 10px 0;
+}
+
+.check{
+    display: block;
+}
+
+.check input{
+    display: inline;
+    width: 10px;
+}
+
+.gumbi input{
+    width: 100px;
+    padding: 5px 20px;
+    margin: 0 20px 0 0;
+}
+
+.error{
+    color: red;
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+/*----------kategorija----------*/
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+    margin:30px 0 50px 0;
+    padding:0;
+}
+
+.grid-item{
+    width: 100%;
+    max-width: 500px;
+    margin:0 0 1% 0;
+    padding:0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    min-height: 250px;
+    height: fit-content;
+}
+
+.grid-item img{
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+@media only screen and (max-width:900px){
+    .grid{
+        display:block;
+    }
+
+    .grid-item{
+        height: fit-content;
+        max-width: 100%;
+    }
+
+    .grid-item img{
+        max-width: 100%;
+    }
+}
+
+/*-------administracija---------*/
+.adminform{
+    margin-bottom: 80px;
+}
+
+.space{
+    height: 330px;
+    max-height: 100%;
+}
+
+/*------login--------*/
+.regse{
+    margin: 50px 0 150px 0;
+}
+
+.regse a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.regse a:hover{
+    text-decoration: none;
+    color: #838383;
+}
